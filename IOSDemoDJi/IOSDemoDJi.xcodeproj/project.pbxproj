@@ -15,6 +15,8 @@
 		6D51FA2A1DEE711A004550F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D51FA281DEE711A004550F3 /* LaunchScreen.storyboard */; };
 		6D51FA351DEE711A004550F3 /* IOSDemoDJiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D51FA341DEE711A004550F3 /* IOSDemoDJiTests.m */; };
 		6D51FA401DEE711A004550F3 /* IOSDemoDJiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D51FA3F1DEE711A004550F3 /* IOSDemoDJiUITests.m */; };
+		6D72913B1DEEB7B500E8ECEF /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D72913A1DEEB7AB00E8ECEF /* VideoPreviewer.framework */; };
+		6D72913C1DEEB7B500E8ECEF /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D72913A1DEEB7AB00E8ECEF /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA445F5901728C82E68FC204 /* libPods-IOSDemoDJi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2785D1D318ADD3853E2E4BF6 /* libPods-IOSDemoDJi.a */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +35,35 @@
 			remoteGlobalIDString = 6D51FA161DEE711A004550F3;
 			remoteInfo = IOSDemoDJi;
 		};
+		6D7291391DEEB7AB00E8ECEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7291351DEEB7AB00E8ECEF /* VideoPreviewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 02A543FD1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+		6D72913D1DEEB7B500E8ECEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7291351DEEB7AB00E8ECEF /* VideoPreviewer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A543FC1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D72913F1DEEB7B500E8ECEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D72913C1DEEB7B500E8ECEF /* VideoPreviewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2785D1D318ADD3853E2E4BF6 /* libPods-IOSDemoDJi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSDemoDJi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +83,7 @@
 		6D51FA3B1DEE711A004550F3 /* IOSDemoDJiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSDemoDJiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D51FA3F1DEE711A004550F3 /* IOSDemoDJiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSDemoDJiUITests.m; sourceTree = "<group>"; };
 		6D51FA411DEE711A004550F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7291351DEEB7AB00E8ECEF /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = 3rdProj/VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
 		70D702D5E7F26FB1C0E851E5 /* Pods-IOSDemoDJi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSDemoDJi.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSDemoDJi/Pods-IOSDemoDJi.release.xcconfig"; sourceTree = "<group>"; };
 		BC35F700AA51988942E3F54B /* Pods-IOSDemoDJi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSDemoDJi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSDemoDJi/Pods-IOSDemoDJi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D72913B1DEEB7B500E8ECEF /* VideoPreviewer.framework in Frameworks */,
 				AA445F5901728C82E68FC204 /* libPods-IOSDemoDJi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +118,7 @@
 		6D51FA0E1DEE711A004550F3 = {
 			isa = PBXGroup;
 			children = (
+				6D7291351DEEB7AB00E8ECEF /* VideoPreviewer.xcodeproj */,
 				6D51FA191DEE711A004550F3 /* IOSDemoDJi */,
 				6D51FA331DEE711A004550F3 /* IOSDemoDJiTests */,
 				6D51FA3E1DEE711A004550F3 /* IOSDemoDJiUITests */,
@@ -147,6 +180,14 @@
 			path = IOSDemoDJiUITests;
 			sourceTree = "<group>";
 		};
+		6D7291361DEEB7AB00E8ECEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D72913A1DEEB7AB00E8ECEF /* VideoPreviewer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7F98109B44312105B2358EE1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +218,12 @@
 				6D51FA151DEE711A004550F3 /* Resources */,
 				26BC2058E7E5D9C535FABDE4 /* [CP] Embed Pods Frameworks */,
 				0BF0F763CA406BEDAD5D59A9 /* [CP] Copy Pods Resources */,
+				6D72913F1DEEB7B500E8ECEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6D72913E1DEEB7B500E8ECEF /* PBXTargetDependency */,
 			);
 			name = IOSDemoDJi;
 			productName = IOSDemoDJi;
@@ -262,6 +305,12 @@
 			mainGroup = 6D51FA0E1DEE711A004550F3;
 			productRefGroup = 6D51FA181DEE711A004550F3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D7291361DEEB7AB00E8ECEF /* Products */;
+					ProjectRef = 6D7291351DEEB7AB00E8ECEF /* VideoPreviewer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D51FA161DEE711A004550F3 /* IOSDemoDJi */,
@@ -270,6 +319,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D72913A1DEEB7AB00E8ECEF /* VideoPreviewer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoPreviewer.framework;
+			remoteRef = 6D7291391DEEB7AB00E8ECEF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D51FA151DEE711A004550F3 /* Resources */ = {
@@ -385,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = 6D51FA161DEE711A004550F3 /* IOSDemoDJi */;
 			targetProxy = 6D51FA3C1DEE711A004550F3 /* PBXContainerItemProxy */;
+		};
+		6D72913E1DEEB7B500E8ECEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoPreviewer;
+			targetProxy = 6D72913D1DEEB7B500E8ECEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YDEVQQ22JR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IOSDemoDJi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shine.IOSDemoDJi;
@@ -517,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YDEVQQ22JR;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IOSDemoDJi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shine.IOSDemoDJi;
